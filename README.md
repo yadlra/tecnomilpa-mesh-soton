@@ -2,7 +2,7 @@
 
 A follow-along record of preparing a four-node Meshtastic mesh deployment between October Books and Highfield in Southampton, May 2026.
 
-**Live site:** https://yadirasanchezbenitez.github.io/october-books-mesh/
+**Live site:** """"""
 
 ## What's here
 
