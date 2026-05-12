@@ -2,7 +2,7 @@
 
 <p class="epigraph">Notes from preparing a four-node Meshtastic mesh deployment between October Books and Highfield in Southampton, May 2026.</p>
 
-This is a follow-along record of one specific pre-deployment exercise: a walk from October Books on Portswood Road to the University of Southampton's Highfield campus, surveying sites for four solar-powered Meshtastic nodes. The deployment itself happens next academic year. The walk is the survey, done together with a Year 2 Creative Computing cohort at Winchester School of Art.
+This is a follow-along record of one specific pre-deployment exercise: a walk from October Books on Portswood Road to the University of Southampton's Highfield campus, surveying sites for four solar-powered Meshtastic nodes. The deployment itself happens next academic year. The walk is the survey, done together with Year 2 Creative Computing cohort at Winchester School of Art.
 
 If you are running something similar, you can use this as a template. Everything here is licensed CC BY-SA 4.0 and the survey sheet is downloadable.
 
@@ -29,16 +29,20 @@ The findings page, to be written after the walk on Thursday 14 May 2026.
 
 ## The hardware in one paragraph
 
-We are deploying the [SenseCAP Solar Node P1-Pro for Meshtastic](https://www.seeedstudio.com/SenseCAP-Solar-Node-P1-Pro-for-Meshtastic-LoRa-p-6412.html) from Seeed Studio: integrated solar node with XIAO nRF52840 Plus controller, Wio-SX1262 LoRa module, L76K GPS, and built-in battery, ~$90 per unit. Four of these will be sited along the 1.2 km route between October Books and Highfield, mounted in planters with hand-woven wigwam structures. The hardware is out-of-the-box ready; the work in this pre-deployment phase is choosing where the four nodes should sit, which is what the walk is for.
+We are deploying the [SenseCAP Solar Node P1-Pro for Meshtastic](https://www.seeedstudio.com/SenseCAP-Solar-Node-P1-Pro-for-Meshtastic-LoRa-p-6412.html) from Seeed Studio: integrated solar node with XIAO nRF52840 Plus controller, Wio-SX1262 LoRa module, L76K GPS, and built-in battery. Four of these will be sited along the 1.2 km route between October Books and Highfield, mounted in planters with hand woven wigwam structures. The hardware is ready; the work in this pre-deployment phase is choosing where the four nodes should sit, which is what the walk is for.
 
 ## Why publish this
 
-Two reasons. First, so anyone running a similar small mesh deployment can see how a real planning walk and Site Planner test were done, with a real coverage map, on a real urban high street. Second, so the survey sheet methodology, which is reusable for other site-survey work, is in the world rather than just on my hard drive.
+Two reasons. 
+First, so anyone running a similar small mesh deployment can see how a real planning walk and Site Planner test were done, with a real coverage map, on a real urban high street. 
+Second, so the survey sheet methodology, which is reusable for other site survey work.
 
 ## Citation
 
-> Sanchez Benitez, Y. (2026). *October Books Mesh: pre-deployment documentation.* Winchester School of Art, University of Southampton.
+> Sanchez Benitez, et al. (2026). *October Books Mesh: pre-deployment documentation.* Winchester School of Art, University of Southampton.
+>
+> Your names go here for the complete reference.
 
 ## License
 
-Text and images CC BY-SA 4.0 unless noted. Code MIT. Survey sheet downloadable and reusable.
+Text and images CC BY-SA 4.0 unless noted.  Survey sheet downloadable and reusable.

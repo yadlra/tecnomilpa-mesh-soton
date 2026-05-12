@@ -28,6 +28,6 @@ The decision page of the survey sheet asks the cohort to agree on what role each
 
 ## What we changed our minds about
 
-This is the most useful section. What did the walk teach us that we did not expect? What did students notice that an engineering checklist would have missed? Where did the methodology fail or succeed in surprising ways?
+This is the most useful section. What did the walk teach us that we did not expect?  Where did the methodology fail or succeed in surprising ways?
 
-This section will be drafted with the students, as a short reflective writing exercise after the walk.
+This section will be drafted with whomever is taking part of the survey, as a short reflective writing exercise after the walk.

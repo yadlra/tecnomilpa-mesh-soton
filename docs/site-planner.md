@@ -4,7 +4,7 @@
 
 <p class="epigraph">A step-by-step record of how we used the Meshtastic Site Planner to predict radio coverage from October Books, with the actual coverage map produced. Anyone with a laptop can reproduce this in about 15 minutes.</p>
 
-The [Meshtastic Site Planner](https://site.meshtastic.org/) is a free open source tool, maintained by the Meshtastic project, that predicts the radio coverage of a LoRa transmitter using terrain elevation data and the ITM/Longley-Rice propagation model. It is a useful pre-deployment check, with important caveats noted at the end of this page.
+The [Meshtastic Site Planner](https://site.meshtastic.org/) is a free open source tool, maintained by the Meshtastic project, that predicts the radio coverage of a LoRa transmitter using terrain elevation data and the ITM/Longley-Rice propagation model. It is a useful pre deployment check, with important caveats noted at the end of this page.
 
 ## What the prediction looks like
 
