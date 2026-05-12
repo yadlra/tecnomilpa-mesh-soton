@@ -1,0 +1,271 @@
+/* Milpa y Minga palette and structural styling.
+   The colours echo the warm tones of the tecnomilpa work:
+   cream like nixtamalised maize, lime like fresh herbs, clay pink, deep ink. */
+
+:root,
+[data-md-color-scheme="milpa"] {
+  /* Brand */
+  --milpa-cream: #F5F0E1;
+  --milpa-cream-deep: #EDE5D0;
+  --milpa-ink: #1F1A14;
+  --milpa-ink-soft: #463E32;
+  --milpa-muted: #7A6F5E;
+  --milpa-rule: #D9D0BB;
+  --milpa-lime: #C5E886;
+  --milpa-lime-deep: #6D9133;
+  --milpa-pink: #E8A0D8;
+  --milpa-pink-deep: #B05F9F;
+  --milpa-corn: #E8B84B;
+
+  /* Material theme overrides */
+  --md-primary-fg-color: var(--milpa-ink);
+  --md-primary-fg-color--light: var(--milpa-ink-soft);
+  --md-primary-fg-color--dark: var(--milpa-ink);
+  --md-primary-bg-color: var(--milpa-cream);
+  --md-primary-bg-color--light: var(--milpa-cream);
+
+  --md-accent-fg-color: var(--milpa-lime-deep);
+  --md-accent-fg-color--transparent: rgba(109, 145, 51, 0.1);
+  --md-accent-bg-color: var(--milpa-cream);
+  --md-accent-bg-color--light: var(--milpa-cream);
+
+  --md-default-bg-color: var(--milpa-cream);
+  --md-default-fg-color: var(--milpa-ink);
+  --md-default-fg-color--light: var(--milpa-ink-soft);
+  --md-default-fg-color--lighter: var(--milpa-muted);
+  --md-default-fg-color--lightest: var(--milpa-rule);
+
+  --md-typeset-color: var(--milpa-ink);
+  --md-typeset-a-color: var(--milpa-ink);
+
+  --md-code-bg-color: var(--milpa-cream-deep);
+  --md-code-fg-color: var(--milpa-ink);
+
+  --md-footer-bg-color: var(--milpa-ink);
+  --md-footer-bg-color--dark: #0F0C08;
+  --md-footer-fg-color: var(--milpa-cream);
+  --md-footer-fg-color--light: var(--milpa-cream-deep);
+  --md-footer-fg-color--lighter: var(--milpa-muted);
+}
+
+/* Dark mode echoes the same palette inverted */
+[data-md-color-scheme="slate"] {
+  --milpa-cream: #1F1A14;
+  --milpa-cream-deep: #15110B;
+  --milpa-ink: #F5F0E1;
+  --milpa-ink-soft: #D9D0BB;
+  --milpa-muted: #9A8E7B;
+  --milpa-rule: #463E32;
+
+  --md-primary-fg-color: var(--milpa-cream);
+  --md-primary-bg-color: var(--milpa-ink);
+  --md-default-bg-color: var(--milpa-cream);
+  --md-default-fg-color: var(--milpa-ink);
+  --md-typeset-color: var(--milpa-ink);
+  --md-code-bg-color: var(--milpa-cream-deep);
+}
+
+/* Body background with a very subtle grain texture */
+body {
+  background: var(--milpa-cream);
+  background-image:
+    radial-gradient(circle at 25% 25%, rgba(184, 158, 100, 0.025) 0%, transparent 50%),
+    radial-gradient(circle at 75% 75%, rgba(184, 158, 100, 0.02) 0%, transparent 50%);
+}
+
+/* Header, restrained and editorial */
+.md-header {
+  background: var(--milpa-cream);
+  color: var(--milpa-ink);
+  border-bottom: 1px solid var(--milpa-rule);
+  box-shadow: none;
+}
+
+.md-header__title {
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.md-tabs {
+  background: var(--milpa-cream);
+  color: var(--milpa-ink);
+  border-bottom: 1px solid var(--milpa-rule);
+}
+
+.md-tabs__link {
+  color: var(--milpa-ink-soft);
+  opacity: 1;
+  font-weight: 500;
+  font-size: 0.78rem;
+}
+
+.md-tabs__link--active,
+.md-tabs__link:hover {
+  color: var(--milpa-ink);
+  border-bottom: 2px solid var(--milpa-lime-deep);
+}
+
+/* Search */
+.md-search__form {
+  background: var(--milpa-cream-deep);
+  border-radius: 4px;
+}
+
+/* Sidebar */
+.md-nav__title {
+  color: var(--milpa-ink);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  font-family: "Public Sans", sans-serif;
+}
+
+.md-nav__link {
+  color: var(--milpa-ink-soft);
+}
+
+.md-nav__link--active,
+.md-nav__link:hover {
+  color: var(--milpa-lime-deep);
+}
+
+/* Admonitions, restyled to feel like field notes */
+.md-typeset .admonition,
+.md-typeset details {
+  border-radius: 4px;
+  border-left: 4px solid var(--milpa-lime-deep);
+  background: var(--milpa-cream-deep);
+  box-shadow: none;
+  font-size: 0.78rem;
+}
+
+.md-typeset .admonition-title,
+.md-typeset summary {
+  background: transparent;
+  font-family: "Fraunces", Georgia, serif;
+  font-weight: 500;
+  font-size: 1rem;
+  font-style: italic;
+}
+
+.md-typeset .admonition.note,
+.md-typeset details.note { border-left-color: var(--milpa-lime-deep); }
+.md-typeset .admonition.warning,
+.md-typeset details.warning { border-left-color: var(--milpa-corn); }
+.md-typeset .admonition.danger,
+.md-typeset details.danger { border-left-color: var(--milpa-pink-deep); }
+.md-typeset .admonition.tip,
+.md-typeset details.tip { border-left-color: var(--milpa-pink); }
+.md-typeset .admonition.quote,
+.md-typeset details.quote { border-left-color: var(--milpa-ink); }
+
+/* Footer, deep ink */
+.md-footer-meta {
+  background: var(--milpa-ink);
+  color: var(--milpa-cream);
+}
+
+.md-copyright {
+  color: var(--milpa-muted);
+  font-size: 0.7rem;
+  line-height: 1.6;
+}
+
+/* Editorial flourish: a hairline between sections */
+.md-typeset hr {
+  border: none;
+  border-top: 1px solid var(--milpa-rule);
+  margin: 3em auto;
+  width: 60%;
+  position: relative;
+}
+
+.md-typeset hr::after {
+  content: "✦";
+  position: absolute;
+  top: -0.7em;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--milpa-cream);
+  padding: 0 0.8em;
+  color: var(--milpa-lime-deep);
+  font-size: 0.9rem;
+}
+
+/* A special class for pull quotes / epigraphs at the start of pages */
+.epigraph {
+  font-family: "Fraunces", Georgia, serif;
+  font-style: italic;
+  font-size: 1.05rem;
+  line-height: 1.5;
+  color: var(--milpa-ink-soft);
+  border: none;
+  padding: 0;
+  margin: 1.5em 0 2.5em;
+  max-width: 32rem;
+}
+
+.epigraph::before {
+  content: "";
+  display: block;
+  width: 3rem;
+  height: 2px;
+  background: var(--milpa-lime-deep);
+  margin-bottom: 1em;
+}
+
+/* Status pill for "in progress" pages */
+.status {
+  display: inline-block;
+  padding: 0.25em 0.7em;
+  border-radius: 999px;
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+}
+
+.status--draft {
+  background: var(--milpa-corn);
+  color: var(--milpa-ink);
+}
+
+.status--complete {
+  background: var(--milpa-lime);
+  color: var(--milpa-ink);
+}
+
+.status--upcoming {
+  background: var(--milpa-pink);
+  color: var(--milpa-ink);
+}
+
+/* A grid for showing items side by side, useful for BOM, gallery */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin: 1.5em 0;
+}
+
+.grid > .card {
+  background: var(--milpa-cream-deep);
+  border: 1px solid var(--milpa-rule);
+  border-radius: 4px;
+  padding: 1rem 1.1rem;
+}
+
+.grid > .card h4 {
+  margin-top: 0;
+  font-family: "Fraunces", Georgia, serif;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.grid > .card p {
+  font-size: 0.78rem;
+  color: var(--milpa-ink-soft);
+  margin: 0.5em 0 0;
+}

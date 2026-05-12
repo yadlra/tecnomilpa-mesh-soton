@@ -1,0 +1,138 @@
+/* Typography for Milpa y Minga docs.
+   Fraunces (display) and Public Sans (body) — both libre, served from Google Fonts.
+   Chosen so the site feels like a thoughtful publication, not a tech product. */
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400&family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
+
+:root {
+  --md-text-font: "Public Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+  --md-code-font: "JetBrains Mono", "SF Mono", Consolas, monospace;
+}
+
+body, .md-typeset {
+  font-family: "Public Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-feature-settings: "ss01", "cv01";
+}
+
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3,
+.md-typeset h4,
+.md-header__title,
+.md-nav__title {
+  font-family: "Fraunces", Georgia, serif;
+  font-feature-settings: "ss01";
+  letter-spacing: -0.01em;
+}
+
+.md-typeset h1 {
+  font-weight: 600;
+  font-size: 2.6rem;
+  line-height: 1.1;
+  margin-top: 0.5em;
+  margin-bottom: 0.8em;
+  font-variation-settings: "opsz" 144;
+}
+
+.md-typeset h2 {
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 1.2;
+  margin-top: 2em;
+  margin-bottom: 0.6em;
+  font-variation-settings: "opsz" 60;
+}
+
+.md-typeset h3 {
+  font-weight: 500;
+  font-size: 1.3rem;
+  font-variation-settings: "opsz" 36;
+  margin-top: 1.8em;
+}
+
+.md-typeset h4 {
+  font-weight: 600;
+  font-size: 1.05rem;
+  text-transform: none;
+  font-variation-settings: "opsz" 24;
+}
+
+/* Body type, generous reading width */
+.md-typeset {
+  font-size: 0.85rem;
+  line-height: 1.7;
+}
+
+.md-typeset p {
+  margin: 1em 0;
+}
+
+.md-content__inner {
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 1.2rem 1.2rem 3rem;
+}
+
+/* Italic Fraunces for blockquotes, very nice */
+.md-typeset blockquote {
+  font-family: "Fraunces", Georgia, serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.15rem;
+  line-height: 1.5;
+  color: var(--milpa-ink);
+  border-left: 3px solid var(--milpa-lime-deep);
+  padding-left: 1.4rem;
+  margin: 2em 0;
+}
+
+/* Drop cap for the first paragraph after h1, optional but elegant */
+.md-typeset h1 + p::first-letter {
+  font-family: "Fraunces", Georgia, serif;
+  font-size: 3.2em;
+  font-weight: 500;
+  float: left;
+  line-height: 0.9;
+  padding-right: 0.08em;
+  padding-top: 0.05em;
+  color: var(--milpa-lime-deep);
+}
+
+/* Inline code, restrained */
+.md-typeset code {
+  font-size: 0.85em;
+  background: var(--milpa-cream);
+  padding: 0.1em 0.4em;
+  border-radius: 3px;
+  border: 1px solid var(--milpa-rule);
+}
+
+/* Tables, editorial style */
+.md-typeset table:not([class]) {
+  font-size: 0.78rem;
+  border: none;
+}
+
+.md-typeset table:not([class]) th {
+  background: var(--milpa-cream);
+  border-bottom: 2px solid var(--milpa-ink);
+  font-family: "Public Sans", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+}
+
+/* Links, subtle */
+.md-typeset a {
+  color: var(--milpa-ink);
+  text-decoration: underline;
+  text-decoration-color: var(--milpa-lime-deep);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+  transition: text-decoration-color 0.2s;
+}
+
+.md-typeset a:hover {
+  text-decoration-color: var(--milpa-pink);
+}

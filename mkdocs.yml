@@ -1,0 +1,68 @@
+site_name: October Books Mesh, Pre-deployment Documentation
+site_description: A follow-along record of the pre-deployment work for a four-node Meshtastic mesh between October Books and Highfield in Southampton, May 2026. Includes the Site Planner walkthrough and the survey sheet used on the walk.
+site_author: Dr Yadira Sanchez Benitez
+copyright: |
+  &copy; 2026 Yadira Sanchez Benitez. CC BY-SA 4.0.
+
+repo_url: https://github.com/yadirasanchezbenitez/october-books-mesh
+repo_name: october-books-mesh
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  custom_dir: overrides
+  language: en
+  features:
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - navigation.footer
+    - content.code.copy
+    - content.action.edit
+    - toc.follow
+  palette:
+    - scheme: milpa
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  font: false
+  icon:
+    repo: fontawesome/brands/github
+    edit: material/pencil
+
+extra_css:
+  - assets/stylesheets/typography.css
+  - assets/stylesheets/milpa.css
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+
+plugins:
+  - search
+
+extra:
+  generator: false
+
+nav:
+  - Home: index.md
+  - The Site Planner walkthrough: site-planner.md
+  - The survey sheet: survey-sheet.md
+  - What we found on the walk: findings.md
